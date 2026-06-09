@@ -432,7 +432,7 @@ textarea {
 
 .project-details__content {
   padding: 8rem 0;
-  max-width: 90rem;
+  max-width: 100rem;
   margin: auto; }
   .project-details__content-title {
     font-weight: 700;
@@ -692,6 +692,20 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 @keyframes wheel {
   to {
